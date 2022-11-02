@@ -1,7 +1,8 @@
+import { AboutComponent } from './components/pages/about/about.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [{path:"about", component: AboutComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,28 @@
+
+
+img {
+  height: 80px;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-pills .nav-link.active {
+  background-color: rgb(23, 134, 83);
+}
+.nav-pills .nav-link {
+  color: white;
+}
+.nav-pills{
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-pills .nav-link:hover{
+  background-color: rgb(84, 131, 109);
+}
