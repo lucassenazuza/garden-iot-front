@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { NewHardwareComponent } from './components/pages/new-hardware/new-hardware.component';
+import { SearchHardwareComponent } from './components/pages/search-hardware/search-hardware.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    NewHardwareComponent,
+    SearchHardwareComponent
   ],
   imports: [
     BrowserModule,
