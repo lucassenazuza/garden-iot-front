@@ -5,16 +5,30 @@
       <a ngbNavLink routerLink="/">Home</a>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink routerLink="/">Monitor</a>
+      <div ngbDropdown class="d-inline-block">
+        <a  ngbNavLink type="button" id="dropdownBasic1" ngbDropdownToggle>
+          Hardwares
+        </a>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Cadastrar</button>
+          <button ngbDropdownItem>Buscar</button>
+        </div>
+      </div>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink routerLink="/">Hardwares</a>
+      <div ngbDropdown class="d-inline-block">
+        <a  ngbNavLink type="button" id="dropdownBasic1" ngbDropdownToggle>
+          Plantas
+        </a>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Cadastrar</button>
+          <button ngbDropdownItem>Buscar</button>
+        </div>
+      </div>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink routerLink="/about">Sobre</a>
-    </li>
-    <li ngbNavItem>
-      <a ngbNavLink routerLink="/">Login</a>
+      <a ngbNavLink routerLink="/">Sobre</a>
     </li>
   </ul>
 </div>
+
