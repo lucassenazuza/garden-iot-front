@@ -1,15 +1,19 @@
-<h2>Busque Hardwares Cadastrados</h2>
+<div class="search-hardware">
+  <div>
+    <h2>Busque Hardwares Cadastrados</h2>
+  </div>
 
-<form class="form-share" (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
-  <input type="hidden" formControlName="id" />
-  <div class="form-group">
-    <label for="title">Buscar Hardwares</label>
-    <input type="text" placeholder="Title" formControlName="title" />
-    <div class="validation-erros">
-      <p>Empty Title</p>
-    </div>
+  <div class="form-class">
+    <form class="form-share" (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+      <input type="hidden" formControlName="id" />
+      <div class="form-group">
+        <label for="title">Hardware Id:</label>
+        <div class="d-flex flex-row">
+          <input id="typeahead-basic" class="form-control p-2" type="text" placeholder="id" formControlName="hardware" />
+          <input type="submit" value="Buscar" class="btn btn-primary"/>
+        </div>
+      </div>
+    </form>
   </div>
-  <div class="form-group">
-    <input type="submit" value="Buscar" />
-  </div>
-</form>
+
+</div>

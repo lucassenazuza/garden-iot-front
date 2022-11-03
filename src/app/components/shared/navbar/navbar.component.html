@@ -6,12 +6,12 @@
     </li>
     <li ngbNavItem>
       <div ngbDropdown class="d-inline-block">
-        <a  ngbNavLink type="button" id="dropdownBasic1" ngbDropdownToggle>
+        <a  ngbNavLink type="button" class="btn btn-outline-primary" ngbDropdownToggle>
           Hardwares
         </a>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem><a routerLink="newHardware">Cadastrar</a></button>
-          <button ngbDropdownItem><a routerLink="searchHardware">Buscar</a></button>
+          <button ngbDropdownItem [routerLink]="'newHardware'">Cadastrar</button>
+          <button ngbDropdownItem [routerLink]="'searchHardware'">Buscar</button>
         </div>
       </div>
     </li>
