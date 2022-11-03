@@ -10,6 +10,9 @@
 }
 
 a {
-  text-decoration: inherit;
+  text-decoration: none;
   color: inherit;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -1,1 +1,15 @@
-<p>search-hardware works!</p>
+<h2>Busque Hardwares Cadastrados</h2>
+
+<form class="form-share" (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+  <input type="hidden" formControlName="id" />
+  <div class="form-group">
+    <label for="title">Buscar Hardwares</label>
+    <input type="text" placeholder="Title" formControlName="title" />
+    <div class="validation-erros">
+      <p>Empty Title</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Buscar" />
+  </div>
+</form>

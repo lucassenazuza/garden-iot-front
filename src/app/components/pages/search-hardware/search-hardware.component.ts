@@ -1,4 +1,6 @@
+import { FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-search-hardware',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchHardwareComponent implements OnInit {
 
+  momentForm !: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  submit(): void{
+
+  }
 }
